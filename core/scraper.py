@@ -1,3 +1,6 @@
+# ----------------------------1st step----------------------------
+#
+#
 # Choose Data Source (Wikipedia)
 #          ↓
 # Configuration Setup
@@ -24,6 +27,8 @@
 # Open and create text file of each state and write data in the file
 #          ↓
 # Save Data (.txt files)
+#          ↓
+# Ready for text processing
 
 
 from logger import logger

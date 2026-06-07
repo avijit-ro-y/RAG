@@ -1,3 +1,48 @@
+# Load Raw State Files (.txt)
+#          ↓
+# Check Data Directory Exists
+#          ↓
+# Read State File Content
+#          ↓
+# Text File Content Cleaning
+                #       ↓
+                # Remove Citations ([1], [2], ...)
+                #       ↓
+                # Remove URLs
+                #       ↓
+                # Normalize Whitespace
+                #       ↓
+                # Remove Extra Blank Lines
+                #       ↓
+                # Return Clean Text
+#          ↓
+# Configure Chunking (Chunk Size + Chunk Overlap)
+#          ↓
+# Apply RecursiveCharacterTextSplitter
+                #       ↓
+                # Split Large Text
+                #       ↓
+                # Generate Multiple Chunks
+#          ↓
+# Create Metadata for Each Chunk
+                #       ↓
+                # State Name
+                #       ↓
+                # Source Information
+                #       ↓
+                # Chunk ID
+#          ↓
+# Store Chunks in all_chunks
+#          ↓
+# Store Metadata in meta_data
+#          ↓
+# Repeat for All State Files
+#          ↓
+# Return Chunks + Metadata
+#          ↓
+# Ready for Embedding Generation
+
+
 import re
 from logger import logger
 from langchain_text_splitters import RecursiveCharacterTextSplitter

@@ -36,7 +36,7 @@
 # Return Result
 
 
-from logger import logger
+from .logger import logger
 from config import N_RESULTS
 from .scraper import WikipediaScraper
 from .text_processor import TextProcessor

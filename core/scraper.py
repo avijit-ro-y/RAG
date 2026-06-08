@@ -31,7 +31,7 @@
 # Ready for text processing
 
 
-from logger import logger
+from .logger import logger
 import requests #Used to make HTTP requests
 from bs4 import BeautifulSoup #Used to parse HTML
 import time

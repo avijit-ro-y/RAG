@@ -31,7 +31,7 @@
 
 
 from config import CHROMA_DB_DIR,COLLECTION_NAME,NUMBER_OF_RESULTS
-from logger import logger
+from .logger import logger
 import chromadb
 import uuid
 

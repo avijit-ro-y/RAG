@@ -11,22 +11,8 @@ from sentence_transformers import SentenceTransformer
 import nltk
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from nltk.tokenize import word_tokenize
-import logging
 from config import OLLAMA_URL, OLLAMA_MODEL, EMBEDDING_MODEL, REQUEST_TIMEOUT
-
-# Download required NLTK data with fallback for different versions
-def ensure_nltk_resources():
-    """Download required NLTK data"""
-    try:
-        nltk.data.find('tokenizers/punkt')
-    except LookupError:
-        try:
-            nltk.download('punkt', quiet=True)
-        except Exception:
-            pass
-
-ensure_nltk_resources()
-logger = logging.getLogger(__name__)
+from core.logger import logger
 
 class RetrievalMetrics:
     """Retrieval performance metrics"""

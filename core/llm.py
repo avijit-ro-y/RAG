@@ -1,6 +1,6 @@
 from config import GOOGLE_API_KEY,GEMINI_MODEL
 import google.generativeai as genai
-from logger import logger
+from .logger import logger
 
 class GeminiLLM:
     def __init__(self):

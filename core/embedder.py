@@ -16,7 +16,7 @@
 
 
 from sentence_transformers import SentenceTransformer
-from logger import logger
+from .logger import logger
 from config import EMBEDDING_MODEL
 
 class Embedder: #embeddings → “How text becomes numbers”...Generates embeddings for text chunks

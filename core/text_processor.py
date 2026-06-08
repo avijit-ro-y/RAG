@@ -44,7 +44,7 @@
 
 
 import re
-from logger import logger
+from .logger import logger
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from config import CHUNK_OVERLAP,CHUNK_SIZE,DATA_DIR
 
